@@ -1,0 +1,6 @@
+framework module Pods_Promise_OC {
+  umbrella header "Pods-Promise-OC-umbrella.h"
+
+  export *
+  module * { export * }
+}

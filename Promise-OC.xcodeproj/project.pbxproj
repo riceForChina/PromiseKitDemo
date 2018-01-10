@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8987A3AA018702528982987D /* Pods_Promise_OC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECE50EF118A844660CFACCC7 /* Pods_Promise_OC.framework */; };
 		AE8134B71FFF6F09005A2D94 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE8134B61FFF6F09005A2D94 /* AppDelegate.m */; };
 		AE8134BA1FFF6F09005A2D94 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE8134B91FFF6F09005A2D94 /* ViewController.m */; };
 		AE8134BD1FFF6F09005A2D94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE8134BB1FFF6F09005A2D94 /* Main.storyboard */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0BB3EE7BB763D1CBEFE511CB /* Pods-Promise-OC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Promise-OC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Promise-OC/Pods-Promise-OC.debug.xcconfig"; sourceTree = "<group>"; };
+		7A575021D793DB5C282ED30F /* Pods-Promise-OC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Promise-OC.release.xcconfig"; path = "Pods/Target Support Files/Pods-Promise-OC/Pods-Promise-OC.release.xcconfig"; sourceTree = "<group>"; };
 		AE8134B21FFF6F09005A2D94 /* Promise-OC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Promise-OC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE8134B51FFF6F09005A2D94 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AE8134B61FFF6F09005A2D94 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -53,6 +56,7 @@
 		AE8134D81FFF6F0A005A2D94 /* Promise-OCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Promise-OCUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE8134DC1FFF6F0A005A2D94 /* Promise_OCUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Promise_OCUITests.m; sourceTree = "<group>"; };
 		AE8134DE1FFF6F0A005A2D94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECE50EF118A844660CFACCC7 /* Pods_Promise_OC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Promise_OC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8987A3AA018702528982987D /* Pods_Promise_OC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +85,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		44F540AB9FD40CCAF16757C6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ECE50EF118A844660CFACCC7 /* Pods_Promise_OC.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AE8134A91FFF6F09005A2D94 = {
 			isa = PBXGroup;
 			children = (
@@ -87,8 +100,11 @@
 				AE8134D01FFF6F09005A2D94 /* Promise-OCTests */,
 				AE8134DB1FFF6F0A005A2D94 /* Promise-OCUITests */,
 				AE8134B31FFF6F09005A2D94 /* Products */,
+				B14B071E46FAAF651A68C2B2 /* Pods */,
+				44F540AB9FD40CCAF16757C6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 0;
 		};
 		AE8134B31FFF6F09005A2D94 /* Products */ = {
 			isa = PBXGroup;
@@ -135,6 +151,15 @@
 			path = "Promise-OCUITests";
 			sourceTree = "<group>";
 		};
+		B14B071E46FAAF651A68C2B2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0BB3EE7BB763D1CBEFE511CB /* Pods-Promise-OC.debug.xcconfig */,
+				7A575021D793DB5C282ED30F /* Pods-Promise-OC.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -142,9 +167,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AE8134E11FFF6F0A005A2D94 /* Build configuration list for PBXNativeTarget "Promise-OC" */;
 			buildPhases = (
+				837275CC0516B537F6245D88 /* [CP] Check Pods Manifest.lock */,
 				AE8134AE1FFF6F09005A2D94 /* Sources */,
 				AE8134AF1FFF6F09005A2D94 /* Frameworks */,
 				AE8134B01FFF6F09005A2D94 /* Resources */,
+				C236B83EF803065AEF9CA7C2 /* [CP] Embed Pods Frameworks */,
+				BDD0FEDBD1D5D96BCAFC2C72 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -263,6 +291,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		837275CC0516B537F6245D88 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BDD0FEDBD1D5D96BCAFC2C72 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Promise-OC/Pods-Promise-OC-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C236B83EF803065AEF9CA7C2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Promise-OC/Pods-Promise-OC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AE8134AE1FFF6F09005A2D94 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -329,6 +405,7 @@
 		AE8134DF1FFF6F0A005A2D94 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -384,6 +461,7 @@
 		AE8134E01FFF6F0A005A2D94 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -432,7 +510,9 @@
 		};
 		AE8134E21FFF6F0A005A2D94 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BB3EE7BB763D1CBEFE511CB /* Pods-Promise-OC.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U7W6229UCJ;
@@ -440,13 +520,16 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "-23.Promise-OC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_SWIFT_SYMBOLS = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		AE8134E31FFF6F0A005A2D94 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A575021D793DB5C282ED30F /* Pods-Promise-OC.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U7W6229UCJ;
@@ -491,6 +574,7 @@
 		AE8134E81FFF6F0A005A2D94 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U7W6229UCJ;
 				INFOPLIST_FILE = "Promise-OCUITests/Info.plist";
@@ -505,6 +589,7 @@
 		AE8134E91FFF6F0A005A2D94 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U7W6229UCJ;
 				INFOPLIST_FILE = "Promise-OCUITests/Info.plist";
